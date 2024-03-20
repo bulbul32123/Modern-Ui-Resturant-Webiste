@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: Mukta;
+}
+
+
+@layer utilities {
+    .imgSelect {
+        @apply pointer-events-none select-none;
+    }
+
+    .imgObject {
+        @apply object-cover object-center;
+    }
+
+    .transitions {
+        @apply transition-all duration-500 ease-in-out;
+    }
+
+    .flexCenter {
+        @apply flex justify-center items-center;
+    }
+
+    .flexStart {
+        @apply flex justify-start items-start;
+    }
+
+    .flexEnd {
+        @apply flex justify-end items-end;
+    }
+
+    .flexBetweens {
+        @apply flex justify-between items-start;
+    }
+    .flexAround {
+        @apply flex justify-around items-center;
+    }
+
+    .flexBetween {
+        @apply flex justify-between items-center;
+    }
+
+    .hover {
+        @apply hover:text-green-primary transitions;
+    }
+
+    .regular-14 {
+        @apply text-[14px] font-medium;
+    }
+
+    .regular-16 {
+        @apply text-[16px] font-semibold;
+    }
+
+    .regular-40 {
+        @apply text-[40px] font-extrabold;
+    }
+
+    .regular-30 {
+        @apply text-[30px] font-extrabold;
+    }
+
+    .btn_Contact {
+        @apply flex gap-2 outline-none border-none items-center px-4 py-2 rounded-full text-white regular-14 bg-green-primary hover:text-black transitions;
+    }
+
+    .btn_Order {
+        @apply flex gap-2 outline-none border-none items-center px-8 rounded-full text-white regular-16 py-2.5 bg-green-primary;
+    }
+
+    .btn_video {
+        @apply flex gap-2 outline-none border-none bg-transparent items-center px-4 py-2.5 rounded-full regular-16 transitions text-black hover:bg-green-primary;
+    }
+
+    .boxShawdo {
+        box-shadow: 5px 5px 40px 1px #1d1d1d52;
+    }
+
+    .boderRadius {
+        border-radius: 60% 41% 0% 58% / 0% 60% 17% 68%;
+    }
+
+    .rounded_border {
+        border-radius: 40% 40% 10px 10px;
+    }
+    .textStyle{
+        @apply  text-sm tracking-wider text-orange-primary uppercase
+    }
+}
